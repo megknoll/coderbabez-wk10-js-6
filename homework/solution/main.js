@@ -1,6 +1,9 @@
 $(document).ready(function(){
-	// When the button is clicked, get the value from the text field, and call getWeather with the text as the argument.
-
+	// When the button is clicked, get the value from the text field, and call getWeather with the text as the argument. 
+	$("button").click(function(){
+		var city = $("input").val();
+		var weather = getWeather(city);
+	});
 });
 
 // Write a function called displayWeather that takes one parameter, weather.
@@ -8,6 +11,14 @@ $(document).ready(function(){
 // If there is no match, display the na image.
 // Possible Weather values are: Thunderstorm, Drizzle, Rain, Snow, Clouds, Clear, Extreme
 
+function displayWeather(weather){
+	$("#weatherText").html(weather);
+	if(weather === "Mist"){
+		$("#weatherImg").attr("src","./img/rain.png");
+	} else {
+		$("#weatherImg").attr("src","./img/na.png");
+	}
+}
 
 
 

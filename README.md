@@ -43,9 +43,124 @@ if (x === "raining" && y < 50) {
 
 ### Lesson - Review
 
-If/else statements let us branch our code so it does different things depending on state.
+If/else statements let us branch our code so it does different things depending on state. What are a few examples of this on a real website?
 
-What are a few examples of this on a real website?
+Syntax:
+
+```
+if (CONDITION) {
+
+} else if (CONDITION) {
+
+} else {
+
+}
+```
+
+The basic rules:
+* We always start with an `if`! The `if` has a `condition` in parentheses, and code to execute in curly braces. We only execute the code if the condition is true.
+* Optional: If we need to test for more than one condition, we can also include as many `else if`s as we want AFTER the if statement. The code between the curly braces executes only if the `else if` condition is true.
+* Optional: we can include ONE `else` at the end - this is the default. The code between the curly braces executes only if none of the `if` or `else if` conditions are true.
+* Condition expressions must always evaluate to TRUE or FALSE - this type of data is called a BOOLEAN. What are the other two types of data we've used so far?
+
+Check for understanding:
+* How many "if" blocks can we have in an if statement? What happens if we put two if blocks after each other like this:
+```
+if (TRUE) {
+  // jump
+}
+if (TRUE) {
+  // walk
+}
+```
+* What happens if we change that second if to an else?
+```
+if (TRUE) {
+  // jump
+} else {
+  // walk
+}
+```
+* What happens if it's an else if?
+```
+if (TRUE) {
+  // jump
+} else if (TRUE) {
+  // walk
+}
+```
+##### Simple Conditions Using Comparison Operators
+
+Comparison Operators:
+* >
+* <
+* ===
+* >=
+* <=
+* !==
+
+Syntax:
+```
+expression > expression
+
+7 > 8
+x > 20
+"raining" === "sunny"
+"five" !== 5
+9 >= 9
+```
+
+Check for understanding:
+```
+x = 9;
+if ( x > 12) {
+  // walk
+} else if ( 13 <= 12) {
+  // jog
+} else if ( TRUE !== FALSE ) {
+  // run
+}
+```
+
+##### Complex Conditions Using Logical Operators
+
+Logical Operators:
+* &&
+* ||
+* !
+
+The basic rules:
+* AND evaluates to TRUE if all conditions are TRUE
+* OR evaluates to TRUE if one or more conditions are TRUE
+* NOT evaluates to TRUE if the condition is FALSE
+
+Syntax:
+```
+(8 < 9) && (9 > 10)
+(8 < 9) || (9 > 10)
+!(8 < 9)
+!((8 < 9) || (9 > 10))
+```
+
+Check for understanding // Practice with Truth Tables!
+
+(X > 50) && (y !== "raining")
+
+| x > 50        | y !== "raining" | Result |
+| ------------- |-----------------| -------|
+| T             | T               |        |
+| T             | F               |        |
+| F             | T               |        |
+| F             | F               |        |
+
+(X > 50) || (y !== "raining")
+
+| x > 50        | y !== "raining" | Result |
+| ------------- |-----------------| -------|
+| T             | T               |        |
+| T             | F               |        |
+| F             | T               |        |
+| F             | F               |        |
 
 ### Project
 
@@ -78,7 +193,8 @@ Style the 2nd and third sections so they are centered with margin between them. 
 
 ### Homework
 
-Complete the weather page project in the homework folder. Instructions are in the javascript file.
+Complete all the if statement activities from this and last week, including choose your own adventure.
+If you're done, do the weather app project in the homework folder. 
 
 # Reference:
 
