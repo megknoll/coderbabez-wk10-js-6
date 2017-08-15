@@ -1,6 +1,6 @@
 # CoderBabez
 
-##  Week Eight - If Statments Review
+##  Week Ten - If Statments Review
 
 ### Objectives
 Understand the purpose and use of if statements, logical operators, and comparison operators.  
@@ -194,7 +194,7 @@ Style the 2nd and third sections so they are centered with margin between them. 
 ### Homework
 
 Complete all the if statement activities from this and last week, including choose your own adventure.
-If you're done, do the weather app project in the homework folder. 
+If you're done, do the weather app project in the homework folder.
 
 # Reference:
 
